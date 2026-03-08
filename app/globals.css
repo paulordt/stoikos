@@ -127,3 +127,12 @@
     @apply font-sans;
   }
 }
+
+@layer utilities {
+  .pb-safe {
+    padding-bottom: env(safe-area-inset-bottom);
+  }
+  .pb-nav-safe {
+    padding-bottom: calc(5rem + env(safe-area-inset-bottom));
+  }
+}
