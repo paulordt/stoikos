@@ -43,3 +43,4 @@ next-env.d.ts
 # playwright
 /test-results/
 /tests/screenshots/
+/tests/auth.json
