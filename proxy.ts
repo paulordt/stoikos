@@ -27,6 +27,7 @@ export async function proxy(request: NextRequest) {
 
   const isPublicPath = request.nextUrl.pathname.startsWith('/login') ||
     request.nextUrl.pathname.startsWith('/api') ||
+    request.nextUrl.pathname.startsWith('/auth') ||
     request.nextUrl.pathname.startsWith('/_playwright')
 
   // Skip auth redirect in test mode
